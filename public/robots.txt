@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://liberators-alliance.org/sitemap.xml

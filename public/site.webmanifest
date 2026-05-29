@@ -1,0 +1,17 @@
+{
+  "name": "Liberators Alliance",
+  "short_name": "Liberators Alliance",
+  "description": "Colorado-based nonprofit fighting human trafficking through rescue operations and survivor healing programs.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#151515",
+  "theme_color": "#151515",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

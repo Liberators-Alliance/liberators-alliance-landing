@@ -3,6 +3,11 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main className="relative flex flex-col md:flex-row h-screen w-full">
+      {/* Semantic h1 for crawlers — visually hidden, accessibility-safe */}
+      <h1 className="sr-only">
+        Liberators Alliance — Anti-Trafficking Nonprofit Fighting Human Trafficking Through Rescue
+        and Survivor Healing
+      </h1>
       {/* Centered header overlay */}
       <div className="absolute top-0 left-0 right-0 z-20 flex flex-col items-center pt-6 md:pt-8 pointer-events-none">
         <Image
@@ -69,7 +74,8 @@ export default function Home() {
           />
 
           <p className="text-gray-400 text-sm tracking-wide mb-8 max-w-xs">
-            Global reach. Tactical precision. Freeing the oppressed beyond our borders.
+            Rescue operations across international borders — fighting human trafficking and freeing
+            victims of oppression worldwide.
           </p>
 
           <span
@@ -84,6 +90,17 @@ export default function Home() {
       {/* Divider line */}
       <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-white/10 z-10" />
       <div className="md:hidden absolute left-0 right-0 top-1/2 h-px bg-white/10 z-10" />
+
+      {/* Mission strip — full-width, bottom of viewport, crawlable mission text */}
+      <div className="absolute bottom-0 left-0 right-0 z-30 bg-black/70 backdrop-blur-sm py-2 px-4 text-center pointer-events-none">
+        <p className="text-white/50 text-xs tracking-wide">
+          A Colorado-based nonprofit fighting human trafficking through international rescue
+          operations and domestic survivor healing.{' '}
+          <span className="text-white/30">
+            Donate · Volunteer · Partner · Refer a Child
+          </span>
+        </p>
+      </div>
 
       {/* CONUS — Right half */}
       <a
@@ -119,7 +136,8 @@ export default function Home() {
           <div className="w-12 h-0.5 my-4 bg-blue-300/50 transition-all duration-300 group-hover:w-20 group-hover:bg-white/60" />
 
           <p className="text-blue-100/70 text-sm tracking-wide mb-8 max-w-xs">
-            Compassionate care. Lasting recovery. Supporting those who serve our nation at home.
+            Trauma-informed healing and clinical care for child survivors of trafficking — Castle
+            Rock, Colorado.
           </p>
 
           <span className="inline-block px-6 py-2.5 text-sm font-semibold uppercase tracking-widest border-2 border-white/40 text-white bg-white/10 transition-all duration-200 group-hover:bg-white/20 group-hover:border-white/70 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.15)]">
